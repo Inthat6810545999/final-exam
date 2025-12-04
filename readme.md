@@ -62,14 +62,14 @@ if __name__ == '__main__':
     c.introduce() say hello 
     print()
     a1 = Customer(a.name, 'home') 
-    first_order = a1.place_order("laptop")
+    first_order = a1.place_order("laptop") select the item to order
     a2 = Customer(b.name, 'home')
     second_order = a2.place_order('Headphones')
-    a3 = Driver(c.name, 'motorcycle')
+    a3 = Driver(c.name, 'motorcycle') assaign the vehicle to driver
     
-    Deliver = DeliveryOrder(a.name, first_order, 'preparing')
+    Deliver = DeliveryOrder(a.name, first_order, 'preparing') 
     courier = Deliver.assign_driver(c.name)
-    Deliver.summary()
+    Deliver.summary() summarize the order
     print()
 
     Deliver2 = DeliveryOrder(b.name, second_order, 'preparing')
@@ -81,6 +81,7 @@ if __name__ == '__main__':
     a3.deliver(second_order, a2.name)
     print()
     print('Final Status:')
-    a3.deliverd(first_order)
-    a3.deliverd(second_order)
+    a3.deliverd(first_order) we print the delivered success message
+    a3.deliverd(second_order) we print the delivered success message
+    and the devllivery process is complete
 ![alt text](image.png)
